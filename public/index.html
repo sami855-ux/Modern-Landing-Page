@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <script src="app.js" defer></script>
+    <title>Home page</title>
+  </head>
+  <body>
+    <header
+      class="w-full h-14 px-4 flex items-center justify-between md:w-3/4 md:mx-auto"
+    >
+      <!-- logo -->
+      <div class="h-full flex items-center">
+        <section
+          class="w-6 h-6 border border-blue-600 rounded-full bg-blue-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-full h-full text-white p-1"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </section>
+        <h2 class="font-semibold pl-2">BOOKMARK</h2>
+      </div>
+      <!-- main menu -->
+      <div class="items-center hidden md:flex">
+        <ul class="flex items-center">
+          <li class="px-3 mx-2">
+            <a href="" class="font-medium text-sm">FEATURES</a>
+          </li>
+          <li class="px-3 mx-2">
+            <a href="" class="font-medium text-sm">PRICING</a>
+          </li>
+          <li class="px-3 mx-2">
+            <a href="" class="font-medium text-sm">CONTACT</a>
+          </li>
+        </ul>
+        <button
+          class="text-xs font-medium px-10 py-1 text-white bg-red-400 border border-red-400 rounded-md cursor-pointer"
+        >
+          LOGIN
+        </button>
+      </div>
+      <!-- slide menu -->
+      <div class="w-10 h-full flex items-center justify-center md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 cursor-pointer"
+          id="bar"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- menu for mobile -->
+    <div
+      class="absolute top-14 -right-16 z-30 w-72 h-44 bg-gray-100 transition-all ease-out duration-200 overflow-hidden opacity-0"
+      id="mobile-menu"
+    >
+      <ul class="flex flex-col justify-start">
+        <li class="py-2 pl-2 hover:bg-gray-200">
+          <a href="" class="font-semibold text-sm w-full">FEATURES</a>
+        </li>
+        <li class="py-2 pl-2 hover:bg-gray-200">
+          <a href="" class="font-semibold text-sm w-full">PRICING</a>
+        </li>
+        <li class="py-2 pl-2 hover:bg-gray-200">
+          <a href="" class="font-semibold text-sm w-full">CONTACT</a>
+        </li>
+        <div class="py-2 pl-2">
+          <button
+            class="font-semibold text-sm py-1 px-10 bg-red-500 text-white rounded-md cursor-pointer"
+          >
+            LOGIN
+          </button>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>
